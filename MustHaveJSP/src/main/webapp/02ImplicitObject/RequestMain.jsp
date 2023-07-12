@@ -27,6 +27,6 @@
 	</form>
 
 	<h2>3. HTTP 요청 헤더 정보 읽기</h2>
-	<a href="RequestHeather.jsp">요청 헤더 정보 읽기</a>
+	<a href="RequestHeader.jsp">요청 헤더 정보 읽기</a>
 </body>
 </html>
