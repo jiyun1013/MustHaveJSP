@@ -58,6 +58,15 @@
   <param-value>5</param-value>
   </context-param>
   
+  <servlet>
+  <servlet-name>서블릿명</servlet-name>
+  <servlet-class>패키지를 포함한 서블릿 클래스명</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>서블릿명</servlet-name>
+  <url-pattern>클라이언트 요청 URL</url-pattern>
+  </servlet-mapping>
+  
 <!--   
   <error-page>
   <error-code>404</error-code>
