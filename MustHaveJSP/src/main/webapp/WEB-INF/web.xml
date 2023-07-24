@@ -59,12 +59,43 @@
   </context-param>
   
   <servlet>
-  <servlet-name>서블릿명</servlet-name>
-  <servlet-class>패키지를 포함한 서블릿 클래스명</servlet-class>
+  <servlet-name>HelloServlet</servlet-name>
+  <servlet-class>servlet.HelloServlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  <servlet-name>서블릿명</servlet-name>
-  <url-pattern>클라이언트 요청 URL</url-pattern>
+  <servlet-name>HelloServlet</servlet-name>
+  <url-pattern>/13Servlet/HelloServlet.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>DirectServletPrint</servlet-name>
+  <servlet-class>servlet.DirectServletPrint</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DirectServletPrint</servlet-name>
+  <url-pattern>/13Servlet/DirectServletPrint.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MemberAuth</servlet-name>
+  <servlet-class>servlet.MemberAuth</servlet-class>
+  <init-param>
+  <param-name>admin_id</param-name>
+  <param-value>nakja</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MemberAuth</servlet-name>
+  <url-pattern>/13Servlet/MemberAuth.mvc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MVCBoardList</servlet-name>
+  <servlet-class>model2.mvcboard.ListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MVCBoardList</servlet-name>
+  <url-pattern>/mvcboard/list.do</url-pattern>
   </servlet-mapping>
   
 <!--   
